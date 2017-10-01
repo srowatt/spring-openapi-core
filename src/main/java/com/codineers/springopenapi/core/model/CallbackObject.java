@@ -15,10 +15,36 @@ public class CallbackObject extends ExtensibleObject {
     /**
      * A Path Item Object used to define a callback request and expected responses. A complete example is available.
      */
-    private PathItemObject expression;
+    private final PathItemObject expression;
 
-    public CallbackObject(Map<String, ?> extensions, PathItemObject expression) {
+    private CallbackObject(final PathItemObject expression, final Map<String, ?> extensions) {
         super(extensions);
         this.expression = expression;
+    }
+
+    public PathItemObject getExpression() {
+        return expression;
+    }
+
+    public static class Builder extends ExtensibleObject.Builder {
+        private PathItemObject expression;
+
+        public static Builder builder() {
+            return new Builder();
+        }
+
+        public Builder withExpression(final PathItemObject expression) {
+            this.expression = expression;
+            return this;
+        }
+
+        public Builder withExtensions(final Map<String, ?> extensions) {
+            this.extensions = extensions;
+            return this;
+        }
+
+        public CallbackObject build() {
+            return new CallbackObject(expression, extensions);
+        }
     }
 }

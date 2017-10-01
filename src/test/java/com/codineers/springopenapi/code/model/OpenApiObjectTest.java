@@ -1,5 +1,8 @@
 package com.codineers.springopenapi.code.model;
 
+import com.codineers.springopenapi.annotations.SoaContactObject;
+import com.codineers.springopenapi.annotations.SoaInfoObject;
+import com.codineers.springopenapi.annotations.SoaLicenseObject;
 import com.codineers.springopenapi.core.model.ComponentsObject;
 import com.codineers.springopenapi.core.model.ContactObject;
 import com.codineers.springopenapi.core.model.ExternalDocumentationObject;

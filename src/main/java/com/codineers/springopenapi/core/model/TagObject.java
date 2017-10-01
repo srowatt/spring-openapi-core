@@ -72,7 +72,7 @@ public class TagObject extends ExtensibleObject {
         }
 
         @Override
-        public Builder withExtensions(Map<String, ?> extensions) {
+        public Builder withExtensions(final Map<String, ?> extensions) {
             this.extensions = extensions;
             return this;
         }
