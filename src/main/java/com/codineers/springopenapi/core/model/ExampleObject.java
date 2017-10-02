@@ -27,7 +27,7 @@ public class ExampleObject extends ExtensibleObject {
     private final String externalValue;
 
     private ExampleObject(final String summary, final String description, final Object value,
-                         final String externalValue, final Map<String, ?> extensions) {
+                          final String externalValue, final Map<String, ?> extensions) {
 
         super(extensions);
 

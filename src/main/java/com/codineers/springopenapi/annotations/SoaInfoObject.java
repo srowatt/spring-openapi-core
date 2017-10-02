@@ -7,7 +7,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.ANNOTATION_TYPE, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.PARAMETER})
+@Target({
+    ElementType.ANNOTATION_TYPE,
+    ElementType.FIELD,
+    ElementType.METHOD,
+    ElementType.PACKAGE,
+    ElementType.PARAMETER,
+    ElementType.TYPE
+})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited

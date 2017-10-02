@@ -24,12 +24,12 @@ public class ServerVariableObject extends ExtensibleObject {
     private final String defaultValue;
 
     /**
-     * 	An optional description for the server variable. CommonMark syntax MAY be used for rich text representation.
+     * An optional description for the server variable. CommonMark syntax MAY be used for rich text representation.
      */
     private final String description;
 
     private ServerVariableObject(final List<String> enumeration, final String defaultValue, final String description,
-                                final Map<String, ?> extensions) {
+                                 final Map<String, ?> extensions) {
 
         super(extensions);
 

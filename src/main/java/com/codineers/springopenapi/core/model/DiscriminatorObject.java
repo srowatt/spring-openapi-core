@@ -8,7 +8,7 @@ import java.util.Map;
  * used to aid in serialization, deserialization, and validation. The discriminator is a specific object in a schema
  * which is used to inform the consumer of the specification of an alternative schema based on the value associated
  * with it.
- *
+ * <p>
  * When using the discriminator, inline schemas will not be considered.
  */
 public class DiscriminatorObject {

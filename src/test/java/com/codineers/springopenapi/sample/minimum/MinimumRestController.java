@@ -1,6 +1,5 @@
-package com.codineers.springopenapi.sample;
+package com.codineers.springopenapi.sample.minimum;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -9,32 +8,32 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-public class SimpleController {
+@RestController
+public class MinimumRestController {
 
     @PostMapping
-    public void simplePostMapping() {
+    public void minimumPostMapping() {
     }
 
     @PutMapping
-    public void simplePutMapping() {
+    public void minimumPutMapping() {
     }
 
     @DeleteMapping
-    public void simpleDeleteMapping() {
+    public void minimumDeleteMapping() {
     }
 
     @GetMapping
-    public String simpleGetMapping() {
+    public String minimumGetMapping() {
         return "";
     }
 
     @PatchMapping
-    public void simplePatchMapping() {
+    public void minimumPatchMapping() {
     }
 
     @RequestMapping
-    public String simpleRequestMapping() {
+    public String minimumRequestMapping() {
         return "";
     }
 }

@@ -28,14 +28,14 @@ public class ResponseObject extends ExtensibleObject {
 
     /**
      * A map of operations links that can be followed from the response.
-     *
+     * <p>
      * The key of the map is a short name for the link, following the naming constraints of the names for Component Objects.
      */
     private final Map<String, ? /*LinkObject | ReferenceObject*/> links;
 
     private ResponseObject(final String description, final Map<String, ?> headers,
-                          final Map<String, MediaTypeObject> content, final Map<String, ?> links,
-                          final Map<String, ?> extensions) {
+                           final Map<String, MediaTypeObject> content, final Map<String, ?> links,
+                           final Map<String, ?> extensions) {
 
         super(extensions);
 

@@ -53,10 +53,10 @@ public class ComponentsObject extends ExtensibleObject {
     private final Map<String, ? /*CallbackObject | ReferenceObject*/> callbacks;
 
     private ComponentsObject(final Map<String, ?> schemas, final Map<String, ?> responses,
-                            final Map<String, ?> parameters, final Map<String, ?> examples,
-                            final Map<String, ?> requestBodies, final Map<String, ?> headers,
-                            final Map<String, ?> securitySchemes, final Map<String, ?> links,
-                            final Map<String, ?> callbacks, final Map<String, ?> extensions) {
+                             final Map<String, ?> parameters, final Map<String, ?> examples,
+                             final Map<String, ?> requestBodies, final Map<String, ?> headers,
+                             final Map<String, ?> securitySchemes, final Map<String, ?> links,
+                             final Map<String, ?> callbacks, final Map<String, ?> extensions) {
 
         super(extensions);
 
@@ -174,7 +174,7 @@ public class ComponentsObject extends ExtensibleObject {
 
         public ComponentsObject build() {
             return new ComponentsObject(schemas, responses, parameters, examples, requestBodies, headers,
-                    securitySchemes, links, callbacks, extensions);
+                securitySchemes, links, callbacks, extensions);
         }
     }
 }

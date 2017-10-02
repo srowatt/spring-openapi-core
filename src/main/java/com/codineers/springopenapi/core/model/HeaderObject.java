@@ -4,14 +4,14 @@ import java.util.Map;
 
 public class HeaderObject extends ParameterObject {
 
-    private HeaderObject(final String name, final String in, final String description,final boolean required,
-                            final boolean deprecated, final boolean allowEmptyValue, final String style,
-                            final boolean explode, final boolean allowReserved, final Object schema,
-                            final Object example, final Map<String, ?> examples,
-                            final Map<String, MediaTypeObject> content, final Map<String, ?> extensions) {
+    private HeaderObject(final String name, final String in, final String description, final boolean required,
+                         final boolean deprecated, final boolean allowEmptyValue, final String style,
+                         final boolean explode, final boolean allowReserved, final Object schema,
+                         final Object example, final Map<String, ?> examples,
+                         final Map<String, MediaTypeObject> content, final Map<String, ?> extensions) {
 
         super(name, in, description, required, deprecated, allowEmptyValue, style, explode,
-                allowReserved, schema, example, examples, content, extensions);
+            allowReserved, schema, example, examples, content, extensions);
     }
 
     public static final class Builder extends ParameterObject.Builder {
@@ -92,7 +92,7 @@ public class HeaderObject extends ParameterObject {
 
         public HeaderObject build() {
             return new HeaderObject(name, in, description, required, deprecated, allowEmptyValue, style, explode,
-                    allowReserved, schema, example, examples, content, extensions);
+                allowReserved, schema, example, examples, content, extensions);
         }
     }
 }

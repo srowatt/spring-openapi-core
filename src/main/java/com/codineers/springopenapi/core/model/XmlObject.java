@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * A metadata object that allows for more fine-tuned XML model definitions.
- *
+ * <p>
  * When using arrays, XML element names are not inferred (for singular/plural forms) and the name property SHOULD be
  * used to add that information. See examples for expected behavior.
  */
@@ -40,7 +40,7 @@ public class XmlObject extends ExtensibleObject {
     private final boolean wrapped;
 
     private XmlObject(final String name, final String namespace, final String prefix, final boolean attribute,
-                     final boolean wrapped, final Map<String, ?> extensions) {
+                      final boolean wrapped, final Map<String, ?> extensions) {
 
         super(extensions);
 

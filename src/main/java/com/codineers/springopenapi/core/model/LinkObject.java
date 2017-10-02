@@ -6,13 +6,13 @@ import java.util.Map;
  * The Link object represents a possible design-time link for a response. The presence of a link does not guarantee the
  * caller's ability to successfully invoke it, rather it provides a known relationship and traversal mechanism between
  * responses and other operations.
- *
+ * <p>
  * Unlike dynamic links (i.e. links provided in the response payload), the OAS linking mechanism does not require link
  * information in the runtime response.
- *
+ * <p>
  * For computing links, and providing instructions to execute them, a runtime expression is used for accessing values
  * in an operation and using them as parameters while invoking the linked operation.
- *
+ * <p>
  * A linked operation MUST be identified using either an operationRef or operationId. In the case of an operationId, it
  * MUST be unique and resolved in the scope of the OAS document. Because of the potential for name clashes, the
  * operationRef syntax is preferred for specifications with external references.
@@ -55,8 +55,8 @@ public class LinkObject extends ExtensibleObject {
     private final ServerObject server;
 
     private LinkObject(final String operationRef, final String operationId, final Map<String, ?> parameters,
-                      final Object requestBody, final String description, final ServerObject server,
-                      final Map<String, ?> extensions) {
+                       final Object requestBody, final String description, final ServerObject server,
+                       final Map<String, ?> extensions) {
 
         super(extensions);
 

@@ -7,7 +7,7 @@ import java.util.Map;
  * that describes a set of requests that may be initiated by the API provider and the expected responses. The key value
  * used to identify the callback object is an expression, evaluated at runtime, that identifies a URL to use for the
  * callback operation.
- *
+ * <p>
  * TODO: The key is a string representing an expression so need to find a way to json serialise it
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#callback-object
  */

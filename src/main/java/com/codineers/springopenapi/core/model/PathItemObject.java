@@ -79,10 +79,10 @@ public class PathItemObject extends ExtensibleObject {
     private final List<? /*ParameterObject | ReferenceObject*/> parameters;
 
     private PathItemObject(final String ref, final String summary, final String description, final OperationObject get,
-                          final OperationObject put, final OperationObject post, final OperationObject delete,
-                          final OperationObject options, final OperationObject head, final OperationObject patch,
-                          final OperationObject trace, final List<ServerObject> servers, final List<?> parameters,
-                          final Map<String, ?> extensions) {
+                           final OperationObject put, final OperationObject post, final OperationObject delete,
+                           final OperationObject options, final OperationObject head, final OperationObject patch,
+                           final OperationObject trace, final List<ServerObject> servers, final List<?> parameters,
+                           final Map<String, ?> extensions) {
 
         super(extensions);
 

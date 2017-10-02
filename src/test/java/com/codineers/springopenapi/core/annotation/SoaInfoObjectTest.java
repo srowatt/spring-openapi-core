@@ -13,18 +13,18 @@ public class SoaInfoObjectTest {
     }
 
     @SoaInfoObject(
-            title = "title",
-            version = "version",
-            description = "description",
-            termsOfService = "terms of service",
-            contact = @SoaContactObject(
-                    name = "name",
-                    url = "url",
-                    email = "email"),
-            license = @SoaLicenseObject(
-                    name = "name",
-                    url = "url"
-            )
+        title = "title",
+        version = "version",
+        description = "description",
+        termsOfService = "terms of service",
+        contact = @SoaContactObject(
+            name = "name",
+            url = "url",
+            email = "email"),
+        license = @SoaLicenseObject(
+            name = "name",
+            url = "url"
+        )
     )
     public void testSoaObjectInfo() {
 

@@ -61,9 +61,9 @@ public class LicenseObject extends ExtensibleObject {
 
         public Builder but() {
             return builder()
-                    .withExtensions(extensions)
-                    .withName(name)
-                    .withUrl(url);
+                .withExtensions(extensions)
+                .withName(name)
+                .withUrl(url);
         }
 
         public LicenseObject build() {

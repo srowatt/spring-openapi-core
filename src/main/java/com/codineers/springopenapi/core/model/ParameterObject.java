@@ -5,34 +5,34 @@ import java.util.Map;
 
 /**
  * Describes a single operation parameter.
- *
+ * <p>
  * A unique parameter is defined by a combination of a name and location.
- *
+ * <p>
  * Parameter Locations
- *
+ * <p>
  * There are four possible parameter locations specified by the in field:
- *
+ * <p>
  * path - Used together with Path Templating, where the parameter value is actually part of the operation's URL. This
  * does not include the host or base path of the API. For example, in /items/{itemId}, the path parameter is itemId
- *
+ * <p>
  * query - Parameters that are appended to the URL. For example, in /items?id=###, the query parameter is id
- *
+ * <p>
  * header - Custom headers that are expected as part of the request. Note that RFC7230 states header names are case
  * insensitive.
- *
+ * <p>
  * cookie - Used to pass a specific cookie value to the API.
  */
 public class ParameterObject extends ExtensibleObject {
 
     /**
      * The name of the parameter. Parameter names are case sensitive.
-     *
+     * <p>
      * If in is "path", the name field MUST correspond to the associated path segment from the path field in the Paths
      * Object. See Path Templating for further information.
-     *
+     * <p>
      * If in is "header" and the name field is "Accept", "Content-Type" or "Authorization", the parameter definition
      * SHALL be ignored.
-     *
+     * <p>
      * For all other cases, the name corresponds to the parameter name used by the in property.
      */
     @NotBlank
@@ -116,11 +116,11 @@ public class ParameterObject extends ExtensibleObject {
     private final Map<String, MediaTypeObject> content;
 
 
-    protected ParameterObject(final String name, final String in, final String description,final boolean required,
-                           final boolean deprecated, final boolean allowEmptyValue, final String style,
-                           final boolean explode, final boolean allowReserved, final Object schema,
-                           final Object example, final Map<String, ?> examples,
-                           final Map<String, MediaTypeObject> content, final Map<String, ?> extensions) {
+    protected ParameterObject(final String name, final String in, final String description, final boolean required,
+                              final boolean deprecated, final boolean allowEmptyValue, final String style,
+                              final boolean explode, final boolean allowReserved, final Object schema,
+                              final Object example, final Map<String, ?> examples,
+                              final Map<String, MediaTypeObject> content, final Map<String, ?> extensions) {
         super(extensions);
         this.name = name;
         this.in = in;
@@ -280,7 +280,7 @@ public class ParameterObject extends ExtensibleObject {
 
         public ParameterObject build() {
             return new ParameterObject(name, in, description, required, deprecated, allowEmptyValue, style, explode,
-                    allowReserved, schema, example, examples, content, extensions);
+                allowReserved, schema, example, examples, content, extensions);
         }
     }
 }

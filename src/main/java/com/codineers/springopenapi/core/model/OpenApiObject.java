@@ -13,9 +13,9 @@ import java.util.Map;
 @JsonDeserialize(builder = OpenApiObject.Builder.class)
 public class OpenApiObject extends ExtensibleObject {
     /**
-     *  This string MUST be the semantic version number of the OpenAPI Specification version that the OpenAPI document
-     *  uses. The openapi field SHOULD be used by tooling specifications and clients to interpret the OpenAPI document.
-     *  This is not related to the API info.version string.
+     * This string MUST be the semantic version number of the OpenAPI Specification version that the OpenAPI document
+     * uses. The openapi field SHOULD be used by tooling specifications and clients to interpret the OpenAPI document.
+     * This is not related to the API info.version string.
      */
     @NotBlank
     private final String openapi;
@@ -64,9 +64,9 @@ public class OpenApiObject extends ExtensibleObject {
     private final ExternalDocumentationObject externalDocs;
 
     private OpenApiObject(final String openapi, final InfoObject info, final List<ServerObject> servers,
-                         final PathsObject paths, final ComponentsObject components,
-                         final List<SecurityRequirementObject> security, final List<TagObject> tags,
-                         final ExternalDocumentationObject externalDocs, final Map<String, ?> extensions) {
+                          final PathsObject paths, final ComponentsObject components,
+                          final List<SecurityRequirementObject> security, final List<TagObject> tags,
+                          final ExternalDocumentationObject externalDocs, final Map<String, ?> extensions) {
 
         super(extensions);
 
@@ -119,7 +119,7 @@ public class OpenApiObject extends ExtensibleObject {
         private PathsObject paths;
         private ComponentsObject components;
         private List<SecurityRequirementObject> security;
-        private List<TagObject>  tags;
+        private List<TagObject> tags;
         private ExternalDocumentationObject externalDocs;
 
         public static Builder builder() {

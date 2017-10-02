@@ -1,6 +1,5 @@
 package com.codineers.springopenapi.annotations;
 
-import javax.validation.constraints.NotBlank;
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

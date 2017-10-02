@@ -14,7 +14,7 @@ public class MediaTypeObject extends ExtensibleObject {
      * Example of the media type. The example object SHOULD be in the correct format as specified by the media type.
      * The example object is mutually exclusive of the examples object. Furthermore, if referencing a schema which
      * contains an example, the example value SHALL override the example provided by the schema.
-      */
+     */
     private final Object/*Any*/ example;
 
     /**

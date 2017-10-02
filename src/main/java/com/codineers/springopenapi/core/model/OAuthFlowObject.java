@@ -10,7 +10,7 @@ import java.util.Map;
 public class OAuthFlowObject extends ExtensibleObject {
     /**
      * The authorization URL to be used for this flow. This MUST be in the form of a URL.
-     *
+     * <p>
      * Applies to: oauth2 ("implicit", "authorizationCode")
      */
     @NotBlank
@@ -18,7 +18,7 @@ public class OAuthFlowObject extends ExtensibleObject {
 
     /**
      * The token URL to be used for this flow. This MUST be in the form of a URL.
-     *
+     * <p>
      * Applies to: oauth2 ("password", "clientCredentials", "authorizationCode")
      */
     @NotBlank
@@ -26,14 +26,14 @@ public class OAuthFlowObject extends ExtensibleObject {
 
     /**
      * The URL to be used for obtaining refresh tokens. This MUST be in the form of a URL.
-     *
+     * <p>
      * Applies to: oauth2
      */
     private final String refreshUrl;
 
     /**
      * The available scopes for the OAuth2 security scheme. A map between the scope name and a short description for it.
-     *
+     * <p>
      * Applies to: oauth2
      */
     @NotNull

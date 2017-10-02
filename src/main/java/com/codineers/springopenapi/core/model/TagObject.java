@@ -26,7 +26,7 @@ public class TagObject extends ExtensibleObject {
     private final ExternalDocumentationObject externalDocs;
 
     private TagObject(final String name, final String description, final ExternalDocumentationObject externalDocs,
-                     final Map<String, ?> extensions) {
+                      final Map<String, ?> extensions) {
 
         super(extensions);
 

@@ -54,8 +54,8 @@ public class SchemaObject extends ExtensibleObject {
     private final boolean deprecated;
 
     private SchemaObject(final boolean nullable, final DiscriminatorObject discriminator, final boolean readOnly,
-                       final boolean writeOnly, final XmlObject xml, final ExternalDocumentationObject externalDocs,
-                       final Object example, final boolean deprecated, final Map<String, ?> extensions) {
+                         final boolean writeOnly, final XmlObject xml, final ExternalDocumentationObject externalDocs,
+                         final Object example, final boolean deprecated, final Map<String, ?> extensions) {
 
         super(extensions);
 
@@ -162,7 +162,7 @@ public class SchemaObject extends ExtensibleObject {
 
         public SchemaObject build() {
             return new SchemaObject(nullable, discriminator, readOnly, writeOnly, xml, externalDocs, example,
-                    deprecated, extensions);
+                deprecated, extensions);
         }
     }
 }

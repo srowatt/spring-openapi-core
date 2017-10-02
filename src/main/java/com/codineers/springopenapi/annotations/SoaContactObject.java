@@ -20,7 +20,7 @@ public @interface SoaContactObject {
     /**
      * The URL pointing to the contact information. MUST be in the format of a URL.
      */
-   String url() default "";
+    String url() default "";
 
     /**
      * The email address of the contact person/organization. MUST be in the format of an email address.

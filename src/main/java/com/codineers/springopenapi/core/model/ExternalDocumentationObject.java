@@ -1,7 +1,6 @@
 package com.codineers.springopenapi.core.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 
 import javax.validation.constraints.NotBlank;
 import java.util.Map;

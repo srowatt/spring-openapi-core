@@ -44,7 +44,7 @@ public class InfoObject extends ExtensibleObject {
     private String version;
 
     private InfoObject(final String title, final String description, final String termsOfService,
-                      final ContactObject contact, final LicenseObject license, final String version,
+                       final ContactObject contact, final LicenseObject license, final String version,
                        final Map<String, ?> extensions) {
 
         super(extensions);
@@ -133,13 +133,13 @@ public class InfoObject extends ExtensibleObject {
 
         public Builder but() {
             return builder()
-                    .withExtensions(extensions)
-                    .withTitle(title)
-                    .withDescription(description)
-                    .withTermsOfService(termsOfService)
-                    .withContact(contact)
-                    .withLicense(license)
-                    .withVersion(version);
+                .withExtensions(extensions)
+                .withTitle(title)
+                .withDescription(description)
+                .withTermsOfService(termsOfService)
+                .withContact(contact)
+                .withLicense(license)
+                .withVersion(version);
         }
 
         public InfoObject build() {

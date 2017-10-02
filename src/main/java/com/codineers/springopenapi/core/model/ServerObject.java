@@ -25,7 +25,7 @@ public class ServerObject extends ExtensibleObject {
     private final Map<String, ServerVariableObject> variables;
 
     private ServerObject(final String url, String description, final Map<String, ServerVariableObject> variables,
-                        final Map<String, ?> extensions) {
+                         final Map<String, ?> extensions) {
 
         super(extensions);
 

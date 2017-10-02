@@ -240,7 +240,7 @@ public class OperationObject extends ExtensibleObject {
 
         public OperationObject build() {
             return new OperationObject(tags, summary, description, externalDocs, operationId, parameters, requestBody,
-                    responses, callbacks, deprecated, security, servers, extensions);
+                responses, callbacks, deprecated, security, servers, extensions);
         }
     }
 }

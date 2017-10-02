@@ -78,10 +78,10 @@ public class ContactObject extends ExtensibleObject {
 
         public Builder but() {
             return builder()
-                    .withExtensions(extensions)
-                    .withName(name)
-                    .withUrl(url)
-                    .withEmail(email);
+                .withExtensions(extensions)
+                .withName(name)
+                .withUrl(url)
+                .withEmail(email);
         }
 
         public ContactObject build() {
